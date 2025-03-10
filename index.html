@@ -18,6 +18,32 @@
             font-family: Arial, sans-serif;
         }
         
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .title {
+            color: rgb(47, 148, 108);
+            font-family: 'Airstream', cursive;
+            margin: 0;
+            font-size: 5vw; /* Adjusts based on viewport width */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .subtitle {
+            color: rgb(47, 148, 108);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            font-size: 3vw; /* Adjusts based on viewport width */
+            font-weight: 300;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
         .image-container {
             width: 100%;
             height: 100%;
@@ -33,8 +59,12 @@
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="https://github.com/suki972/zromzrom/blob/main/shira.jpg?raw=true" alt="Shira Kohn">
+    <div class="container">
+        <h1 class="title">Dedicated to Shira Kohn</h1>
+        <h2 class="subtitle">The one and only</h2>
+        <div class="image-container">
+            <img src="https://github.com/suki972/zromzrom/blob/main/shira.jpg?raw=true" alt="Shira Kohn">
+        </div>
     </div>
 </body>
 </html>
