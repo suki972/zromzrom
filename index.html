@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedicated to Shira Kohn</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap');
         
@@ -29,24 +30,26 @@
         
         .title-container {
             width: 100%;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgb(47, 148, 108); /* Applied green color */
             text-align: center;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
+            padding: 5px; /* Minimal padding */
             border-radius: 10px;
-            margin-bottom: 20px;
             font-family: 'Brush Script MT', cursive;
+            position: absolute;
+            top: 20%; /* Vertically align the title-container */
+            transform: translateY(-50%);
         }
         
         .title {
             margin: 0;
-            font-size: 10vw; /* Default size */
+            font-size: 8vw; /* Reduced size for mobile optimization */
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .subtitle {
             margin: 0;
-            font-size: 6vw; /* Default size */
+            font-size: 4.8vw; /* Reduced size for mobile optimization */
             font-weight: 300;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
@@ -57,6 +60,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 5px; /* Minimal space between text and image */
         }
         
         .image-container img {
@@ -66,14 +70,13 @@
         
         @media (min-width: 768px) {
             .title-container {
+                top: 10%; /* Adjusted position for desktop */
+                transform: translateY(-50%);
                 width: 100%;
-                color: rgba(255, 255, 255, 0.8);
-                text-align: center;
+                margin-bottom: 5px; /* Minimal space between text and image */
                 background-color: rgba(0, 0, 0, 0.5);
-                padding: 10px;
+                padding: 5px; /* Minimal padding */
                 border-radius: 10px;
-                margin-bottom: 20px;
-                font-family: 'Brush Script MT', cursive;
             }
             
             .title {
@@ -82,16 +85,6 @@
             
             .subtitle {
                 font-size: 1.5vw; /* Adjusted size for desktop */
-            }
-        }
-        
-        @media (max-width: 767px) {
-            .title {
-                font-size: 8vw; /* Reduced size for iPhone */
-            }
-            
-            .subtitle {
-                font-size: 4.8vw; /* Reduced size for iPhone */
             }
         }
     </style>
